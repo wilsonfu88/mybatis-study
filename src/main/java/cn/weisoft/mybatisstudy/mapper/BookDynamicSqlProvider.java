@@ -4,6 +4,7 @@ package cn.weisoft.mybatisstudy.mapper;
 import org.apache.ibatis.jdbc.SQL;
 import java.util.Map;
 
+//动态SQL帮助类
 public class BookDynamicSqlProvider {
     public String selectWithParam(Map<String,Object> param){
         String sql =  new SQL(){

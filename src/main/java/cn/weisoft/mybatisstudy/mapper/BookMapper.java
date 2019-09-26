@@ -8,6 +8,7 @@ import org.apache.ibatis.mapping.StatementType;
 import java.util.List;
 import java.util.Map;
 
+//基于注解方式的MyBatis调用
 @Mapper
 public interface BookMapper {
     @Select("select * from book where id=#{id}")
