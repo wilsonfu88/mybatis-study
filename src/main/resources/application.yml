@@ -1,0 +1,19 @@
+server:
+  port: 8000
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost/testdb?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&maxReconnects=15000&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+logging:
+  path: E:/temp/20190906/mybatis-study
+  file: test-web.log
+  level:
+    cn:
+      weisoft:
+        mybatisstudy:
+          mapper: debug
+
+
+
