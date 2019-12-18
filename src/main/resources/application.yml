@@ -1,19 +1,35 @@
-server:
-  port: 8000
-spring:
-  datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://localhost/testdb?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&maxReconnects=15000&serverTimezone=Asia/Shanghai
-    username: root
-    password: root
-logging:
-  path: E:/temp/20190906/mybatis-study
-  file: test-web.log
-  level:
-    cn:
-      weisoft:
-        mybatisstudy:
-          mapper: debug
+#server:
+#  port: 8000
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    url: jdbc:mysql://localhost/testdb?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&maxReconnects=15000&serverTimezone=Asia/Shanghai
+#    username: root
+#    password: root
+#logging:
+#  path: E:/temp/20190906/mybatis-study
+#  file: test-web.log
+#  level:
+#    cn:
+#      weisoft:
+#        mybatisstudy:
+#          mapper: debug
+#
+#
+#
+# 应用全局唯一的身份标识
+#app.id =platform-dev
+  # Apollo Meta Server 地址
+#apollo.meta = http://192.168.0.248:8080
+  # 设置在应用启动阶段就加载 Apollo 配置
+#apollo.bootstrap.enabled = true
 
+app:
+  id: mybatis-study
 
-
+apollo:
+  meta: http://192.168.0.248:8080
+  bootstrap:
+    enabled: true
+    namespaces: application.yaml
